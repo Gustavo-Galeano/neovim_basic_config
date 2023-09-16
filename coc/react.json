@@ -1,0 +1,14 @@
+{
+  "languageserver": {
+    "javascript": {
+      "command": "eslint",
+      "args": ["--stdin", "--stdin-filename", "%filepath", "--format", "json"],
+      "rootPatterns": [".eslintrc.js", ".eslintrc.json", ".eslintrc", "package.json"],
+      "filetypes": ["javascript", "javascriptreact"],
+      "initializationOptions": {
+        "configFile": "./.eslintrc.js"
+      }
+    }
+  }
+}
+
